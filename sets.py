@@ -1,0 +1,23 @@
+#erase duplicate elements
+
+def remove_duplicates(some_list):
+    without_duplicates = []
+    for element in some_list:
+        if element not in without_duplicates:
+            without_duplicates.append(element)
+    return without_duplicates
+
+def remove_duplicates_with_sets(some_list):
+    return list(set(some_list))
+
+def run():
+    random_list = [1, 2, 2, 2, 3, "Platzi", "Platzi", True, 4.6, False]
+    print(remove_duplicates(random_list))
+
+
+if __name__ == '__main__':
+    run()
+
+    #Ohh do it
+    #def removerduplicados(lista):
+        #return list(set(lista))
